@@ -93,6 +93,6 @@ computer_name                   = "UbuntuWebServer"
 
   admin_ssh_key {
     username   = "alekceu"
-    public_key = file("~/.ssh/id_rsa.pub")
+    public_key = file("./ssh_key/id_rsa.pub")
   }
 }
