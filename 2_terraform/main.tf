@@ -89,7 +89,7 @@ resource "azurerm_linux_virtual_machine" "AZVM" {
 
 computer_name                   = "UbuntuWebServer"
   admin_username                  = "alekceu"
-  disable_password_authentication = True
+  disable_password_authentication = true
 
   admin_ssh_key {
     username   = "alekceu"
