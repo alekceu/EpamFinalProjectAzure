@@ -19,9 +19,9 @@ terraform {
 }
 
 provider "azurerm" {
-  client_id       = var.CLIENT_ID
-  client_secret   = var.CLIENT_SECRET
-  tenant_id       = var.ARM_TENANT_ID
-  subscription_id = var.ARM_SUBSCRIPTION_ID
+  client_id       = var.client_id
+  client_secret   = var.client_secret
+  tenant_id       = var.tenant_id
+  subscription_id = var.subscription_id
   features {}
 }
