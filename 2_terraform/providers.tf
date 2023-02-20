@@ -1,3 +1,8 @@
+variable "client_id" {}
+variable "client_secret" {}
+variable "tenant_id" {}
+variable "subscription_id" {}
+
 terraform {
   required_version = ">=0.12"
 
@@ -14,9 +19,9 @@ terraform {
 }
 
 provider "azurerm" {
-  client_id       = ${ARM_CLIENT_ID}
-  client_secret   = ${ARM_CLIENT_SECRET}
-  tenant_id       = ${ARM_TENANT_ID}
-  subscription_id = ${ARM_SUBSCRIPTION_ID}
+  client_id       = var.CLIENT_ID
+  client_secret   = var.CLIENT_SECRET
+  tenant_id       = var.ARM_TENANT_ID
+  subscription_id = var.ARM_SUBSCRIPTION_ID
   features {}
 }
