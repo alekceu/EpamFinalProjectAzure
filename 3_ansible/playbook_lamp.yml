@@ -1,0 +1,17 @@
+---
+- name: Install LAMP server
+  hosts: vm_all
+  gather_facts: false
+
+  tasks: 
+  - name: Check connection
+    ping:
+
+  - name: Install LAMP
+    apt: name={{ item }} update_cache=yes state=latest
+    loop: [ 'apache2','php', 'php-mysql', 'libapache2-mod-php' ]
+
+  - name: Restart service httpd, in all cases
+    service:
+      name: apache2
+      state: restarted

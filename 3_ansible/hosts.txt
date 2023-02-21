@@ -1,0 +1,8 @@
+[vm1]
+74.235.60.34
+
+[vm2]
+
+[vm_all:children]
+vm1
+vm2
