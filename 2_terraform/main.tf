@@ -55,7 +55,7 @@ resource "azurerm_network_interface" "AZVM_nic" {
   ip_configuration {
     name                          = "AZVM_nic_configuration"
     subnet_id                     = azurerm_subnet.az_subnet.id
-    private_ip_address_allocation = "Dynamic"
+    private_ip_address_allocation = "Static"
     public_ip_address_id          = azurerm_public_ip.az_public_ip.id
   }
 }
