@@ -1,5 +1,5 @@
 ---
 ansible_ssh_user		: alekceu
-ansible_ssh_private_key		: /home/ashved/.ssh/id_rsa
+ansible_ssh_private_key		: /var/lib/jenkins/.ssh/id_rsa
 ansible_become			: yes 
 ansible_become_method		: sudo
