@@ -1,5 +1,5 @@
 [vm1]
-20.163.245.49
+WebServerIP
 
 [vm2]
 
