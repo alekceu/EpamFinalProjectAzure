@@ -12,6 +12,6 @@
     copy:
       src: ../1_src/
       dest: /var/www/html
-      owner: apache
-      group: apache        
+      owner: root
+      group: root       
       mode: 0644
