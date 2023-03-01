@@ -1,8 +1,9 @@
+---
 - name: Ansible Copy Directory Example Local to Remote
   hosts: vm_all
   gather_facts: false
 
- tasks: 
+  tasks: 
   - name: Check connection
     ping:
 
