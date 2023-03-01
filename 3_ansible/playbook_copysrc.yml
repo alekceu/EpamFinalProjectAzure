@@ -1,0 +1,16 @@
+- name: Ansible Copy Directory Example Local to Remote
+  hosts: vm_all
+  gather_facts: false
+
+ tasks: 
+  - name: Check connection
+    ping:
+
+  - name: Copying the Directory's contents (sub directories/files)
+    become: true 
+    copy:
+      src: ../1_src/
+      dest: /var/www/html
+      owner: apache
+      group: apache        
+      mode: 0644
