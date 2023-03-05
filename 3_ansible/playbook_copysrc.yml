@@ -9,9 +9,6 @@
 
   - name: Copying the Directory's contents (sub directories/files)
     become: true 
-    copy:
+    synchronize:
       src: ../1_src/
       dest: /var/www/html
-      owner: root
-      group: root       
-      mode: 0644
